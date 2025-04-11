@@ -1,33 +1,83 @@
+'use client';
+
 import Link from 'next/link';
+import CurrencySelector from './CurrencySelector';
+import { themes, regions } from '../../data/hotels';
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-6">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-8">
-            <Link href="/" className="text-2xl font-bold text-gray-800">
-              LUX Hotels
-            </Link>
-            <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">
+          <Link href="/" className="text-2xl font-bold text-blue-600">
+            LUX Hotels
+          </Link>
+          <div className="flex items-center gap-10">
+            <nav className="flex gap-4 items-center">
+              <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors">
                 Ana Sayfa
               </Link>
-              <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link href="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
                 Hakkımızda
               </Link>
-              <Link href="/hotels" className="text-gray-600 hover:text-gray-900 transition-colors">
-                Oteller
-              </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <div className="relative group h-[64px] flex items-center">
+                <button
+                  className="text-gray-600 group-hover:text-blue-600 transition-colors flex items-center gap-1"
+                >
+                  Temalarına Göre Oteller
+                  <svg
+                    className="w-4 h-4 transition-transform group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute top-full left-0 w-56 bg-gray-200 rounded-b-lg shadow-lg py-2 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  {themes.map((theme) => (
+                    <Link
+                      key={theme.id}
+                      href={`/${theme.slug}`}
+                      className="block px-4 py-2 text-gray-600 hover:bg-gray-300 hover:text-blue-600 transition-colors"
+                    >
+                      {theme.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="relative group h-[64px] flex items-center">
+                <button
+                  className="text-gray-600 group-hover:text-blue-600 transition-colors flex items-center gap-1"
+                >
+                  Şehre Göre Oteller
+                  <svg
+                    className="w-4 h-4 transition-transform group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div className="absolute top-full left-0 w-56 bg-gray-200 rounded-b-lg shadow-lg py-2 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  {regions.map((region) => (
+                    <Link
+                      key={region.id}
+                      href={`/${region.slug}`}
+                      className="block px-4 py-2 text-gray-600 hover:bg-gray-300 hover:text-blue-600 transition-colors"
+                    >
+                      {region.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
                 İletişim
               </Link>
             </nav>
-          </div>
-          <div className="flex items-center space-x-4">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-              Rezervasyon Yap
-            </button>
+            <CurrencySelector />
           </div>
         </div>
       </div>

@@ -15,17 +15,22 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Hızlı Bağlantılar</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white">
+                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
                   Ana Sayfa
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white">
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
                   Hakkımızda
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white">
+                <Link href="/hotels" className="text-gray-400 hover:text-white transition-colors">
+                  Oteller
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
                   İletişim
                 </Link>
               </li>
@@ -42,13 +47,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Bizi Takip Edin</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 Instagram
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 Twitter
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 Facebook
               </a>
             </div>

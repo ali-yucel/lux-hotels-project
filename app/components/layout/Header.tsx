@@ -10,19 +10,22 @@ export default function Header() {
               LUX Hotels
             </Link>
             <nav className="hidden md:flex space-x-6">
-              <Link href="/" className="text-gray-600 hover:text-gray-900">
+              <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Ana Sayfa
               </Link>
-              <Link href="/about" className="text-gray-600 hover:text-gray-900">
+              <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Hakkımızda
               </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900">
+              <Link href="/hotels" className="text-gray-600 hover:text-gray-900 transition-colors">
+                Oteller
+              </Link>
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
                 İletişim
               </Link>
             </nav>
           </div>
           <div className="flex items-center space-x-4">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
               Rezervasyon Yap
             </button>
           </div>

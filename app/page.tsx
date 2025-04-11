@@ -103,7 +103,7 @@ export default function Home() {
                 </h1>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   En üst düzey konfor ve hizmet anlayışıyla unutulmaz bir konaklama deneyimi yaşayın. 
-                  Türkiye'nin en seçkin otellerinde yerinizi ayırtın.
+                  Türkiyenin en seçkin otellerinde yerinizi ayırtın.
                 </p>
                 <div className="flex gap-4">
                   <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition-colors">

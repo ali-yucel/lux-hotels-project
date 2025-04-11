@@ -47,7 +47,7 @@ export default function About() {
                   Vizyonumuz
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  Türkiye'nin lider otel rezervasyon platformu olma vizyonuyla çıktığımız bu yolda, 
+                  Türkiyenin lider otel rezervasyon platformu olma vizyonuyla çıktığımız bu yolda, 
                   teknoloji ve insan odaklı hizmet anlayışımızla sektöre yön vermeyi hedefliyoruz. 
                   Misafirlerimizin güvenini kazanmak ve sürdürmek en büyük önceliğimizdir.
                 </p>

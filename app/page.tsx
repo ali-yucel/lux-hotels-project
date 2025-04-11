@@ -60,6 +60,30 @@ export default function Home() {
       name: 'Muhafazakar Oteller',
       image: '/images/conservative-hotels.jpg',
       description: 'Özel konseptiyle huzurlu bir tatil'
+    },
+    {
+      id: 5,
+      name: 'Termal Oteller',
+      image: '/images/thermal-hotels.jpg',
+      description: 'Sağlık ve dinlenme bir arada'
+    },
+    {
+      id: 6,
+      name: 'Butik Oteller',
+      image: '/images/boutique-hotels.jpg',
+      description: 'Benzersiz tasarım ve özel hizmet'
+    },
+    {
+      id: 7,
+      name: 'Şehir Otelleri',
+      image: '/images/city-hotels.jpg',
+      description: 'Şehrin kalbinde konforlu konaklama'
+    },
+    {
+      id: 8,
+      name: 'Ultra Lüks Oteller',
+      image: '/images/luxury-hotels.jpg',
+      description: 'En üst düzey lüks ve konfor'
     }
   ];
 
@@ -135,8 +159,8 @@ export default function Home() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-2 text-black">Otel Temaları</h2>
-              <p className="text-gray-600 text-lg">Öne Çıkan Otel Temalarını İnceleyin</p>
+              <h2 className="text-3xl font-bold mb-4">Seyahat Temaları</h2>
+              <p className="text-gray-600 text-lg">Öne Çıkan Seyahat Temalarını İnceleyin</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -147,12 +171,12 @@ export default function Home() {
                       src={theme.image}
                       alt={theme.name}
                       fill
-                      className="object-cover"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-lg font-semibold text-black">{theme.name}</h3>
-                    <p className="text-gray-500">{theme.description}</p>
+                    <h3 className="text-xl font-semibold mb-2">{theme.name}</h3>
+                    <p className="text-gray-600">{theme.description}</p>
                   </div>
                 </div>
               ))}

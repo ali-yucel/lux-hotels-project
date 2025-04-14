@@ -33,11 +33,32 @@
       "subtitle": "Explore Featured Hotel Themes"
     }
   },
+  "footer": {
+    "description": "Where luxury meets comfort. We await you for an unforgettable accommodation experience.",
+    "quick_links": {
+      "title": "Quick Links"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "info@luxhotels.com",
+      "phone": "+90 555 123 4567",
+      "address": "Istanbul, Turkey"
+    },
+    "social": {
+      "title": "Follow Us",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "facebook": "Facebook"
+    },
+    "copyright": "© {year} LUX Hotels. All rights reserved."
+  },
   "hotels": {
     "filters": {
       "price_range": "Price Range",
       "themes_by_hotels": "Hotels By Theme",
-      "cities_by_hotels": "Hotels By City"
+      "cities_by_hotels": "Hotels By City",
+      "rating": "Rating",
+      "amenities": "Amenities"
     },
     "sort": {
       "price_low": "Price (Low to High)",

@@ -33,6 +33,25 @@
         "subtitle": "Öne Çıkan Otel Temalarını İnceleyin"
       }
     },
+    "footer": {
+      "description": "Lüks ve konforun buluştuğu nokta. Unutulmaz bir konaklama deneyimi için sizleri bekliyoruz.",
+      "quick_links": {
+        "title": "Hızlı Bağlantılar"
+      },
+      "contact": {
+        "title": "İletişim",
+        "email": "info@luxhotels.com",
+        "phone": "+90 555 123 4567",
+        "address": "İstanbul, Türkiye"
+      },
+      "social": {
+        "title": "Bizi Takip Edin",
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "facebook": "Facebook"
+      },
+      "copyright": "© {year} LUX Hotels. Tüm hakları saklıdır."
+    },
     "hotels": {
       "filters": {
         "price_range": "Fiyat Aralığı",

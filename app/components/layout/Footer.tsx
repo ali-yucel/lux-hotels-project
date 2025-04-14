@@ -1,6 +1,10 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export default function Footer() {
+  const t = useTranslations();
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -8,59 +12,59 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">LUX Hotels</h3>
             <p className="text-gray-400">
-              Lüks ve konforun buluştuğu nokta. Unutulmaz bir konaklama deneyimi için sizleri bekliyoruz.
+              {t('footer.description')}
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Hızlı Bağlantılar</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.quick_links.title')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-white transition-colors">
-                  Ana Sayfa
+                  {t('navigation.home')}
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
-                  Hakkımızda
+                  {t('navigation.about')}
                 </Link>
               </li>
               <li>
                 <Link href="/hotels" className="text-gray-400 hover:text-white transition-colors">
-                  Oteller
+                  {t('navigation.hotels')}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
-                  İletişim
+                  {t('navigation.contact')}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">İletişim</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.contact.title')}</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>info@luxhotels.com</li>
-              <li>+90 555 123 4567</li>
-              <li>İstanbul, Türkiye</li>
+              <li>{t('footer.contact.email')}</li>
+              <li>{t('footer.contact.phone')}</li>
+              <li>{t('footer.contact.address')}</li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Bizi Takip Edin</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.social.title')}</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Instagram
+                {t('footer.social.instagram')}
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Twitter
+                {t('footer.social.twitter')}
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Facebook
+                {t('footer.social.facebook')}
               </a>
             </div>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} LUX Hotels. Tüm hakları saklıdır.</p>
+          <p>{t('footer.copyright', { year: currentYear })}</p>
         </div>
       </div>
     </footer>

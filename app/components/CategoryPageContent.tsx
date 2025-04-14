@@ -1,10 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '../../i18n/routing';
 import { IRegion, ITheme } from '../data/hotels';
 import useCurrencyStore from '../store/useCurrencyStore';
 import { useMemo } from 'react';
+import { useLocale } from 'next-intl';
 
 interface CategoryPageContentProps {
   categoryData: IRegion | ITheme;
@@ -12,6 +13,7 @@ interface CategoryPageContentProps {
 
 export default function CategoryPageContent({ categoryData }: CategoryPageContentProps) {
   const { currency, convertPrice } = useCurrencyStore();
+  const locale = useLocale();
 
   // Fiyatları hesapla ve cache'le
   const prices = useMemo(() => {
@@ -26,7 +28,7 @@ export default function CategoryPageContent({ categoryData }: CategoryPageConten
       <div className="relative h-[300px] mb-12 overflow-hidden">
         <Image
           src={categoryData.image}
-          alt={categoryData.name}
+          alt={locale === 'tr' ? categoryData.name_tr : categoryData.name_en}
           fill
           className="object-cover"
           priority
@@ -35,8 +37,12 @@ export default function CategoryPageContent({ categoryData }: CategoryPageConten
         <div className="absolute inset-0 bg-black/50" />
         {/* Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-          <h1 className="text-4xl font-bold mb-2 drop-shadow-lg">{categoryData.name}</h1>
-          <p className="text-xl text-gray-100 max-w-3xl drop-shadow-md text-center px-4">{categoryData.description}</p>
+          <h1 className="text-4xl font-bold mb-2 drop-shadow-lg">
+            {locale === 'tr' ? categoryData.name_tr : categoryData.name_en}
+          </h1>
+          <p className="text-xl text-gray-100 max-w-3xl drop-shadow-md text-center px-4">
+            {locale === 'tr' ? categoryData.description_tr : categoryData.description_en}
+          </p>
         </div>
       </div>
       <div className="container mx-auto px-4 py-8">

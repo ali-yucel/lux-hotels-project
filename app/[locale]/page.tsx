@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from 'next/link';
-import { regions, themes } from './data/hotels';
+import { regions, themes } from '../data/hotels';
 
 export default function Home() {
   return (

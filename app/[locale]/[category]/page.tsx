@@ -1,6 +1,6 @@
-import { getRegionBySlug, getThemeBySlug, regions, themes } from '../data/hotels';
+import { getRegionBySlug, getThemeBySlug, regions, themes } from '@/app/data/hotels';
 import { notFound } from 'next/navigation';
-import CategoryPageContent from '../components/CategoryPageContent';
+import CategoryPageContent from '@/app/components/CategoryPageContent';
 
 interface Props {
   params: Promise<{

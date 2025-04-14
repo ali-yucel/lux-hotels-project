@@ -1,8 +1,8 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
 import { Metadata } from 'next';
+import Footer from "../components/layout/Footer";
 import "../globals.css";
 
 export function generateStaticParams() {

@@ -20,8 +20,8 @@
   "hotels": {
     "filters": {
       "price_range": "Price Range",
-      "rating": "Rating",
-      "amenities": "Amenities"
+      "themes_by_hotels": "Hotels By Theme",
+      "cities_by_hotels": "Hotels By City"
     },
     "sort": {
       "price_low": "Price (Low to High)",

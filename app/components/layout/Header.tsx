@@ -2,9 +2,13 @@
 
 import Link from 'next/link';
 import CurrencySelector from './CurrencySelector';
+import LanguageSelector from './LanguageSelector';
 import { themes, regions } from '../../data/hotels';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
+  const t = useTranslations();
+  
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
@@ -15,16 +19,16 @@ export default function Header() {
           <div className="flex items-center gap-10">
             <nav className="flex gap-4 items-center">
               <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Ana Sayfa
+                {t('navigation.home')}
               </Link>
               <Link href="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Hakkımızda
+                {t('navigation.about')}
               </Link>
               <div className="relative group h-[64px] flex items-center">
                 <button
                   className="text-gray-600 group-hover:text-blue-600 transition-colors flex items-center gap-1"
                 >
-                  Temalarına Göre Oteller
+                  {t('hotels.filters.themes_by_hotels')}
                   <svg
                     className="w-4 h-4 transition-transform group-hover:rotate-180"
                     fill="none"
@@ -51,7 +55,7 @@ export default function Header() {
                 <button
                   className="text-gray-600 group-hover:text-blue-600 transition-colors flex items-center gap-1"
                 >
-                  Şehre Göre Oteller
+                  {t('hotels.filters.cities_by_hotels')}
                   <svg
                     className="w-4 h-4 transition-transform group-hover:rotate-180"
                     fill="none"
@@ -74,10 +78,13 @@ export default function Header() {
                 </div>
               </div>
               <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
-                İletişim
+                {t('navigation.contact')}
               </Link>
             </nav>
-            <CurrencySelector />
+            <div className="flex items-center gap-4">
+              <LanguageSelector />
+              <CurrencySelector />
+            </div>
           </div>
         </div>
       </div>

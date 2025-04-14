@@ -20,8 +20,8 @@
     "hotels": {
       "filters": {
         "price_range": "Fiyat Aralığı",
-        "rating": "Değerlendirme",
-        "amenities": "Özellikler"
+        "themes_by_hotels": "Temalarına Göre Oteller",
+        "cities_by_hotels": "Şehre Göre Oteller"
       },
       "sort": {
         "price_low": "Fiyat (Düşükten Yükseğe)",

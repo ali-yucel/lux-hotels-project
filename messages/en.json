@@ -1,0 +1,33 @@
+{
+  "navigation": {
+    "home": "Home",
+    "hotels": "Hotels",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "common": {
+    "search": "Search",
+    "book_now": "Book Now",
+    "price_from": "Starting from",
+    "per_night": "per night",
+    "currency": {
+      "try": "TRY",
+      "usd": "USD",
+      "eur": "EUR",
+      "gbp": "GBP"
+    }
+  },
+  "hotels": {
+    "filters": {
+      "price_range": "Price Range",
+      "rating": "Rating",
+      "amenities": "Amenities"
+    },
+    "sort": {
+      "price_low": "Price (Low to High)",
+      "price_high": "Price (High to Low)",
+      "rating": "By Rating",
+      "popularity": "By Popularity"
+    }
+  }
+}

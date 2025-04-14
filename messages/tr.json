@@ -1,0 +1,34 @@
+{
+    "navigation": {
+      "home": "Ana Sayfa",
+      "hotels": "Oteller",
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    },
+    "common": {
+      "search": "Ara",
+      "book_now": "Hemen Rezervasyon Yap",
+      "price_from": "Başlayan fiyatlarla",
+      "per_night": "gecelik",
+      "currency": {
+        "try": "TL",
+        "usd": "USD",
+        "eur": "EUR",
+        "gbp": "GBP"
+      }
+    },
+    "hotels": {
+      "filters": {
+        "price_range": "Fiyat Aralığı",
+        "rating": "Değerlendirme",
+        "amenities": "Özellikler"
+      },
+      "sort": {
+        "price_low": "Fiyat (Düşükten Yükseğe)",
+        "price_high": "Fiyat (Yüksekten Düşüğe)",
+        "rating": "Değerlendirmeye Göre",
+        "popularity": "Popülerliğe Göre"
+      }
+    }
+  }
+  

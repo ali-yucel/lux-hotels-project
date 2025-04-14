@@ -13,13 +13,27 @@ export default function LanguageSelector() {
   };
 
   return (
-    <select
-      value={locale}
-      onChange={(e) => handleLanguageChange(e.target.value)}
-      className="bg-white border border-gray-300 rounded-md px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-blue-500 transition-colors"
-    >
-      <option value="tr">🇹🇷 TR</option>
-      <option value="en">🇬🇧 EN</option>
-    </select>
+    <div className="flex gap-2">
+      <button
+        onClick={() => handleLanguageChange('tr')}
+        className={`px-3 py-1 rounded-md text-sm transition-colors ${
+          locale === 'tr'
+            ? 'bg-blue-600 text-white'
+            : 'bg-white border border-gray-300 text-gray-700 hover:border-blue-500 cursor-pointer'
+        }`}
+      >
+        🇹🇷 TR
+      </button>
+      <button
+        onClick={() => handleLanguageChange('en')}
+        className={`px-3 py-1 rounded-md text-sm transition-colors ${
+          locale === 'en'
+            ? 'bg-blue-600 text-white'
+            : 'bg-white border border-gray-300 text-gray-700 hover:border-blue-500 cursor-pointer'
+        }`}
+      >
+        🇬🇧 EN
+      </button>
+    </div>
   );
 } 

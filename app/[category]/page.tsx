@@ -1,7 +1,5 @@
 import { getRegionBySlug, getThemeBySlug, regions, themes } from '../data/hotels';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
-import Link from 'next/link';
 import CategoryPageContent from '../components/CategoryPageContent';
 
 interface Props {

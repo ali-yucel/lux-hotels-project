@@ -42,7 +42,7 @@ export default function CategoryPageContent({ categoryData }: CategoryPageConten
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {categoryData.hotels.map((hotel) => (
-            <Link href={`/hotels/${hotel.id}`} key={hotel.id} className="block">
+            <Link href={`#`} key={hotel.id} className="block">
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-48">
                   <Image

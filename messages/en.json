@@ -33,6 +33,28 @@
       "subtitle": "Explore Featured Hotel Themes"
     }
   },
+  "about": {
+    "mission": {
+      "title": "Our Mission",
+      "description": "At Lux Hotels, we aim to provide our guests with an unforgettable accommodation experience. With our meticulously planned services and professional team, we strive to exceed our guests' expectations.",
+      "image_alt": "Lux Hotels Team"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "On our journey to become Turkey's leading hotel reservation platform, we aim to lead the industry with our technology and human-oriented service approach. Gaining and maintaining our guests' trust is our top priority.",
+      "image_alt": "Lux Hotels Vision"
+    },
+    "stats": {
+      "hotels": "500+",
+      "hotels_label": "Hotel Partners",
+      "customers": "50K+",
+      "customers_label": "Happy Customers",
+      "cities": "30+",
+      "cities_label": "Cities",
+      "rating": "4.8",
+      "rating_label": "Customer Rating"
+    }
+  },
   "footer": {
     "description": "Where luxury meets comfort. We await you for an unforgettable accommodation experience.",
     "quick_links": {

@@ -33,6 +33,28 @@
         "subtitle": "Öne Çıkan Otel Temalarını İnceleyin"
       }
     },
+    "about": {
+      "mission": {
+        "title": "Misyonumuz",
+        "description": "Lux Hotels olarak, misafirlerimize unutulmaz bir konaklama deneyimi sunmayı hedefliyoruz. Her detayı özenle düşünülmüş hizmetlerimiz ve profesyonel ekibimizle, misafirlerimizin beklentilerinin ötesine geçmeyi amaçlıyoruz.",
+        "image_alt": "Lux Hotels Ekibi"
+      },
+      "vision": {
+        "title": "Vizyonumuz",
+        "description": "Türkiye'nin lider otel rezervasyon platformu olma vizyonuyla çıktığımız bu yolda, teknoloji ve insan odaklı hizmet anlayışımızla sektöre yön vermeyi hedefliyoruz. Misafirlerimizin güvenini kazanmak ve sürdürmek en büyük önceliğimizdir.",
+        "image_alt": "Lux Hotels Vizyon"
+      },
+      "stats": {
+        "hotels": "500+",
+        "hotels_label": "Otel Partneri",
+        "customers": "50K+",
+        "customers_label": "Mutlu Müşteri",
+        "cities": "30+",
+        "cities_label": "Şehir",
+        "rating": "4.8",
+        "rating_label": "Müşteri Puanı"
+      }
+    },
     "footer": {
       "description": "Lüks ve konforun buluştuğu nokta. Unutulmaz bir konaklama deneyimi için sizleri bekliyoruz.",
       "quick_links": {
@@ -55,7 +77,7 @@
     "hotels": {
       "filters": {
         "price_range": "Fiyat Aralığı",
-        "themes_by_hotels": "Temalarına Göre Oteller",
+        "themes_by_hotels": "Temaya Göre Oteller",
         "cities_by_hotels": "Şehre Göre Oteller"
       },
       "sort": {

@@ -44,7 +44,7 @@ export default function CategoryPageContent({ categoryData }: CategoryPageConten
           {categoryData.hotels.map((hotel) => (
             <Link href={`#`} key={hotel.id} className="block">
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative h-48">
+                <div className="relative h-70">
                   <Image
                     src={hotel.image}
                     alt={hotel.name}

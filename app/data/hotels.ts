@@ -219,7 +219,7 @@ export const themes: ITheme[] = [
     hotels: [
       {
         id: '101',
-        name: 'Family Resort & Spa',
+        name: 'Aile Otel 1',
         location: 'Antalya',
         price: 3500,
         image: '/images/placeholder.png',
@@ -228,7 +228,7 @@ export const themes: ITheme[] = [
       },
       {
         id: '102',
-        name: 'Kids Paradise Hotel',
+        name: 'Aile Otel 2',
         location: 'Bodrum',
         price: 4200,
         image: '/images/placeholder.png',
@@ -246,7 +246,7 @@ export const themes: ITheme[] = [
     hotels: [
       {
         id: '201',
-        name: 'Eco Lodge Resort',
+        name: 'Doğa Otel 1',
         location: 'Fethiye',
         price: 2800,
         image: '/images/placeholder.png',
@@ -255,7 +255,7 @@ export const themes: ITheme[] = [
       },
       {
         id: '202',
-        name: 'Nature Valley Hotel',
+        name: 'Doğa Otel 2',
         location: 'Kapadokya',
         price: 3100,
         image: '/images/placeholder.png',
@@ -309,6 +309,15 @@ export const themes: ITheme[] = [
       {
         id: '402',
         name: 'Muhafazakar Hotel 2',
+        location: 'Muhafazakar',
+        price: 4200,
+        image: '/images/placeholder.png',
+        reviewCount: 412,
+        rating: 4.7
+      },
+      {
+        id: '402',
+        name: 'Muhafazakar Hotel 3',
         location: 'Muhafazakar',
         price: 4200,
         image: '/images/placeholder.png',
@@ -401,14 +410,14 @@ export const themes: ITheme[] = [
   {
     id: '8',
     slug: 'ultra-luks-otelleri',
-    name: 'Ultra Luks Otelleri',
+    name: 'Ultra Lüks Otelleri',
     image: '/images/luxury-hotels.jpg',
-    description: 'Ultra Luks otelleri',
+    description: 'Ultra Lüks otelleri',
     hotels: [
       {
         id: '801',
-        name: 'Ultra Luks Hotel 1',
-        location: 'Ultra Luks',
+        name: 'Ultra Lüks Hotel 1',
+        location: 'Ultra Lüks',
         price: 3500,
         image: '/images/placeholder.png',
         reviewCount: 524,
@@ -416,8 +425,8 @@ export const themes: ITheme[] = [
       },
       {
         id: '802',
-        name: 'Ultra Luks Hotel 2',
-        location: 'Ultra Luks',
+        name: 'Ultra Lüks Hotel 2',
+        location: 'Ultra Lüks',
         price: 4200,
         image: '/images/placeholder.png',
         reviewCount: 412,

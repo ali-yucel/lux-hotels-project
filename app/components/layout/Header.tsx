@@ -5,9 +5,11 @@ import CurrencySelector from './CurrencySelector';
 import LanguageSelector from './LanguageSelector';
 import { themes, regions } from '../../data/hotels';
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 
 export default function Header() {
   const t = useTranslations();
+  const locale = useLocale();
   
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -28,7 +30,7 @@ export default function Header() {
                 <button
                   className="text-gray-600 group-hover:text-blue-600 transition-colors flex items-center gap-1"
                 >
-                  {t('hotels.filters.themes_by_hotels')}
+                  {t('navigation.themes')}
                   <svg
                     className="w-4 h-4 transition-transform group-hover:rotate-180"
                     fill="none"
@@ -45,7 +47,7 @@ export default function Header() {
                       href={`/${theme.slug}`}
                       className="block px-4 py-2 text-gray-600 hover:bg-gray-300 hover:text-blue-600 transition-colors"
                     >
-                      {theme.name}
+                      {locale === 'tr' ? theme.name_tr : theme.name_en}
                     </Link>
                   ))}
                 </div>
@@ -55,7 +57,7 @@ export default function Header() {
                 <button
                   className="text-gray-600 group-hover:text-blue-600 transition-colors flex items-center gap-1"
                 >
-                  {t('hotels.filters.cities_by_hotels')}
+                  {t('navigation.regions')}
                   <svg
                     className="w-4 h-4 transition-transform group-hover:rotate-180"
                     fill="none"
@@ -72,12 +74,12 @@ export default function Header() {
                       href={`/${region.slug}`}
                       className="block px-4 py-2 text-gray-600 hover:bg-gray-300 hover:text-blue-600 transition-colors"
                     >
-                      {region.name}
+                      {locale === 'tr' ? region.name_tr : region.name_en}
                     </Link>
                   ))}
                 </div>
               </div>
-              <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+              <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
                 {t('navigation.contact')}
               </Link>
             </nav>

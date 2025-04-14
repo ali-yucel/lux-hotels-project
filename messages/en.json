@@ -3,7 +3,9 @@
     "home": "Home",
     "hotels": "Hotels",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "themes": "Hotels by Theme",
+    "regions": "Hotels by City"
   },
   "common": {
     "search": "Search",

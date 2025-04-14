@@ -3,7 +3,9 @@
       "home": "Ana Sayfa",
       "hotels": "Oteller",
       "about": "Hakkımızda",
-      "contact": "İletişim"
+      "contact": "İletişim",
+      "themes": "Temaya Göre Oteller",
+      "regions": "Şehre Göre Oteller"
     },
     "common": {
       "search": "Ara",

@@ -356,7 +356,7 @@ export const themes: ITheme[] = [
         name: "Richmond Nua Wellness",
         location: "Sapanca, Sakarya",
         price: 4500,
-        image: "/images/hotels/richmond-nua.jpg",
+        image: "/images/placeholder.png",
         reviewCount: 523,
         rating: 4.8
       },
@@ -365,7 +365,7 @@ export const themes: ITheme[] = [
         name: "NG Afyon",
         location: "Afyon",
         price: 3800,
-        image: "/images/hotels/ng-afyon.jpg",
+        image: "/images/placeholder.png",
         reviewCount: 412,
         rating: 4.6
       }

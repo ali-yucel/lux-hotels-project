@@ -17,6 +17,22 @@
       "gbp": "GBP"
     }
   },
+  "home": {
+    "hero": {
+      "title": "Luxury and Comfort",
+      "subtitle": "New Destination",
+      "description": "Experience an unforgettable stay with our top-level comfort and service approach. Book your place at Turkey's most exclusive hotels.",
+      "image_alt": "Luxury Hotel Image"
+    },
+    "destinations": {
+      "title": "Popular Destinations",
+      "subtitle": "Explore Popular Travel Destinations"
+    },
+    "themes": {
+      "title": "Hotel Themes",
+      "subtitle": "Explore Featured Hotel Themes"
+    }
+  },
   "hotels": {
     "filters": {
       "price_range": "Price Range",

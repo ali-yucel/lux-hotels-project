@@ -17,6 +17,22 @@
         "gbp": "GBP"
       }
     },
+    "home": {
+      "hero": {
+        "title": "Lüks ve Konforun",
+        "subtitle": "Yeni Adresi",
+        "description": "En üst düzey konfor ve hizmet anlayışıyla unutulmaz bir konaklama deneyimi yaşayın. Türkiye'nin en seçkin otellerinde yerinizi ayırtın.",
+        "image_alt": "Lüks Otel Görseli"
+      },
+      "destinations": {
+        "title": "Popüler Bölgeler",
+        "subtitle": "Popüler Seyahat Bölgelerini Keşfedin"
+      },
+      "themes": {
+        "title": "Otel Temaları",
+        "subtitle": "Öne Çıkan Otel Temalarını İnceleyin"
+      }
+    },
     "hotels": {
       "filters": {
         "price_range": "Fiyat Aralığı",

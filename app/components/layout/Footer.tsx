@@ -29,12 +29,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/hotels" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                   {t('navigation.hotels')}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                   {t('navigation.contact')}
                 </Link>
               </li>

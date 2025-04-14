@@ -79,9 +79,9 @@ export default function Header() {
                   ))}
                 </div>
               </div>
-              <Link href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+              <button className="text-gray-600 hover:text-blue-600 transition-colors">
                 {t('navigation.contact')}
-              </Link>
+              </button>
             </nav>
             <div className="flex items-center gap-4">
               <LanguageSelector />

@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { regions, themes } from '../data/hotels';
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { Link } from '../../i18n/routing';
 
 export default function Home() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <main className="flex-grow">
@@ -57,16 +59,18 @@ export default function Home() {
                 <div className="relative h-[300px] w-full">
                   <Image
                     src={region.image}
-                    alt={region.name}
+                    alt={locale === 'tr' ? region.name_tr : region.name_en}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/20"></div>
                   <div className="absolute inset-0 flex flex-col items-center justify-center">
                     <h3 className="text-white text-2xl font-semibold">
-                      {region.name}
+                      {locale === 'tr' ? region.name_tr : region.name_en}
                     </h3>
-                    <span className="text-white font-medium">{region.description}</span>
+                    <span className="text-white font-medium">
+                      {locale === 'tr' ? region.description_tr : region.description_en}
+                    </span>
                   </div>
                 </div>
               </Link>
@@ -93,14 +97,18 @@ export default function Home() {
                 <div className="relative h-[200px]">
                   <Image
                     src={theme.image}
-                    alt={theme.name}
+                    alt={locale === 'tr' ? theme.name_tr : theme.name_en}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{theme.name}</h3>
-                  <p className="text-gray-600">{theme.description}</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {locale === 'tr' ? theme.name_tr : theme.name_en}
+                  </h3>
+                  <p className="text-gray-600">
+                    {locale === 'tr' ? theme.description_tr : theme.description_en}
+                  </p>
                 </div>
               </Link>
             ))}

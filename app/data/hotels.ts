@@ -1,41 +1,47 @@
 export interface IHotel {
-  id: string;
+  id: number;
   name: string;
   location: string;
-  price: number;
   image: string;
-  reviewCount: number;
+  price: number;
   rating: number;
+  reviewCount: number;
 }
 
 export interface IRegion {
-  id: string;
+  id: number;
   slug: string;
-  name: string;
+  name_tr: string;
+  name_en: string;
+  description_tr: string;
+  description_en: string;
   image: string;
-  description: string;
   hotels: IHotel[];
 }
 
 export interface ITheme {
-  id: string;
+  id: number;
   slug: string;
-  name: string;
+  name_tr: string;
+  name_en: string;
+  description_tr: string;
+  description_en: string;
   image: string;
-  description: string;
   hotels: IHotel[];
 }
 
 export const regions: IRegion[] = [
   {
-    id: '1',
+    id: 1,
     slug: 'antalya-otelleri',
-    name: 'Antalya',
+    name_tr: 'Antalya',
+    name_en: 'Antalya',
+    description_tr: 'Antalya\'nın en seçkin otelleri',
+    description_en: 'The best hotels in Antalya',
     image: '/images/antalya.jpg',
-    description: 'Antalya\'nın en seçkin otelleri',
     hotels: [
       {
-        id: '11',
+        id: 11,
         name: 'Antalya Hotel 1',
         location: 'Lara, Antalya',
         price: 2500,
@@ -44,7 +50,7 @@ export const regions: IRegion[] = [
         rating: 4.7
       },
       {
-        id: '12',
+        id: 12,
         name: 'Antalya Hotel 2',
         location: 'Konyaaltı, Antalya',
         price: 1800,
@@ -53,7 +59,7 @@ export const regions: IRegion[] = [
         rating: 4.5
       },
       {
-        id: '13',
+        id: 13,
         name: 'Antalya Hotel 3',
         location: 'Konyaaltı, Antalya',
         price: 2700,
@@ -62,7 +68,7 @@ export const regions: IRegion[] = [
         rating: 4.5
       },
       {
-        id: '14',
+        id: 14,
         name: 'Antalya Hotel 4',
         location: 'Konyaaltı, Antalya',
         price: 2200,
@@ -73,14 +79,16 @@ export const regions: IRegion[] = [
     ]
   },
   {
-    id: '2',
+    id: 2,
     slug: 'bodrum-otelleri',
-    name: 'Bodrum',
+    name_tr: 'Bodrum',
+    name_en: 'Bodrum',
+    description_tr: 'Bodrum\'un en seçkin otelleri',
+    description_en: 'The best hotels in Bodrum',
     image: '/images/bodrum.jpg',
-    description: 'Bodrum\'un en seçkin otelleri',
     hotels: [
       {
-        id: '21',
+        id: 21,
         name: 'Bodrum Hotel 1',
         location: 'Yalıkavak, Bodrum',
         price: 3500,
@@ -89,7 +97,7 @@ export const regions: IRegion[] = [
         rating: 4.8
       },
       {
-        id: '22',
+        id: 22,
         name: 'Bodrum Hotel 2',
         location: 'Gümbet, Bodrum',
         price: 2200,
@@ -100,14 +108,16 @@ export const regions: IRegion[] = [
     ]
   },
   {
-    id: '3',
+    id: 3,
     slug: 'istanbul-otelleri',
-    name: 'İstanbul',
+    name_tr: 'İstanbul',
+    name_en: 'Istanbul',
+    description_tr: 'İstanbul\'un en seçkin otelleri',
+    description_en: 'The best hotels in Istanbul',
     image: '/images/istanbul.jpg',
-    description: 'İstanbul\'un en seçkin otelleri',
     hotels: [
       {
-        id: '31',
+        id: 31,
         name: 'İstanbul Hotel 1',
         location: 'Beşiktaş, İstanbul',
         price: 4500,
@@ -116,7 +126,7 @@ export const regions: IRegion[] = [
         rating: 4.9
       },
       {
-        id: '32',
+        id: 32,
         name: 'İstanbul Hotel 2',
         location: 'Şişli, İstanbul',
         price: 2800,
@@ -127,14 +137,16 @@ export const regions: IRegion[] = [
     ]
   },
   {
-    id: '4',
+    id: 4,
     slug: 'fethiye-otelleri',
-    name: 'Fethiye',
+    name_tr: 'Fethiye',
+    name_en: 'Fethiye',
+    description_tr: 'Fethiye\'nin en seçkin otelleri', 
+    description_en: 'The best hotels in Fethiye',
     image: '/images/fethiye.jpg',
-    description: 'Fethiye\'nin en seçkin otelleri', 
     hotels: [
       {
-        id: '41',
+        id: 41,
         name: 'Fethiye Hotel 1',
         location: 'Fethiye, Fethiye',
         price: 4500,
@@ -143,7 +155,7 @@ export const regions: IRegion[] = [
         rating: 4.9
       },
       {
-        id: '42',
+        id: 42,
         name: 'Fethiye Hotel 2',
         location: 'Fethiye, Fethiye',
         price: 2800,
@@ -154,14 +166,16 @@ export const regions: IRegion[] = [
     ]
   },
   {
-    id: '5',
+    id: 5,
     slug: 'kibris-otelleri',
-    name: 'Kıbrıs',
+    name_tr: 'Kıbrıs',
+    name_en: 'Cyprus',
+    description_tr: 'Kıbrıs\'ın en seçkin otelleri',
+    description_en: 'The best hotels in Cyprus',
     image: '/images/kibris.jpg',
-    description: 'Kıbrıs\'ın en seçkin otelleri',
     hotels: [
       {
-        id: '51',
+        id: 51,
         name: 'Kıbrıs Hotel 1',
         location: 'Paphos, Kıbrıs',
         price: 5500,
@@ -170,7 +184,7 @@ export const regions: IRegion[] = [
         rating: 4.9
       },
       {
-        id: '52',
+        id: 52,
         name: 'Kıbrıs Hotel 2',
         location: 'Limassol, Kıbrıs',
         price: 3800,
@@ -181,14 +195,16 @@ export const regions: IRegion[] = [
     ]
   },
   {
-    id: '6',
+    id: 6,
     slug: 'kapadokya-otelleri',
-    name: 'Kapadokya',
+    name_tr: 'Kapadokya',
+    name_en: 'Cappadocia',
+    description_tr: 'Kapadokya\'nın en seçkin otelleri',
+    description_en: 'The best hotels in Cappadocia',
     image: '/images/kapadokya.jpg',
-    description: 'Kapadokya\'nın en seçkin otelleri',
     hotels: [
       {
-        id: '61',
+        id: 61,
         name: 'Kapadokya Hotel 1',
         location: 'Göreme, Kapadokya',
         price: 6500,
@@ -197,7 +213,7 @@ export const regions: IRegion[] = [
         rating: 4.9
       },
       {
-        id: '62',
+        id: 62,
         name: 'Kapadokya Hotel 2',
         location: 'Nevşehir, Kapadokya',
         price: 4800,
@@ -211,235 +227,243 @@ export const regions: IRegion[] = [
 
 export const themes: ITheme[] = [
   {
-    id: '1',
-    slug: 'aile-otelleri',
-    name: 'Aile Otelleri',
-    image: '/images/family-hotels.jpg',
-    description: 'Ailenizle unutulmaz bir tatil deneyimi',
+    id: 1,
+    slug: "aile-otelleri",
+    name_tr: "Aile Otelleri",
+    name_en: "Family Hotels",
+    description_tr: "Ailenizle unutulmaz bir tatil deneyimi",
+    description_en: "An unforgettable holiday experience with your family",
+    image: "/images/family-hotels.jpg",
     hotels: [
       {
-        id: '101',
-        name: 'Aile Otel 1',
-        location: 'Antalya',
-        price: 3500,
-        image: '/images/placeholder.png',
-        reviewCount: 524,
-        rating: 4.8
-      },
-      {
-        id: '102',
-        name: 'Aile Otel 2',
-        location: 'Bodrum',
-        price: 4200,
-        image: '/images/placeholder.png',
-        reviewCount: 412,
-        rating: 4.7
-      }
-    ]
-  },
-  {
-    id: '2',
-    slug: 'doga-otelleri',
-    name: 'Doğa Otelleri',
-    image: '/images/nature-hotels.jpg',
-    description: 'Doğayla iç içe huzurlu bir konaklama',
-    hotels: [
-      {
-        id: '201',
-        name: 'Doğa Otel 1',
-        location: 'Fethiye',
-        price: 2800,
-        image: '/images/placeholder.png',
-        reviewCount: 356,
+        id: 101,
+        name: "Voyage Belek Golf & Spa",
+        location: "Belek, Antalya",
+        price: 8500,
+        image: "/images/placeholder.png",
+        reviewCount: 856,
         rating: 4.9
       },
       {
-        id: '202',
-        name: 'Doğa Otel 2',
-        location: 'Kapadokya',
-        price: 3100,
-        image: '/images/placeholder.png',
-        reviewCount: 289,
+        id: 102,
+        name: "Rixos Premium Tekirova",
+        location: "Tekirova, Antalya",
+        price: 7800,
+        image: "/images/placeholder.png",
+        reviewCount: 745,
+        rating: 4.8
+      }
+    ]
+  },
+  {
+    id: 2,
+    slug: "doga-otelleri",
+    name_tr: "Doğa Otelleri",
+    name_en: "Nature Hotels",
+    description_tr: "Doğayla iç içe huzurlu bir konaklama",
+    description_en: "A peaceful stay in nature",
+    image: "/images/nature-hotels.jpg",
+    hotels: [
+      {
+        id: 201,
+        name: "Sakli Göl Evleri",
+        location: "Sapanca, Sakarya",
+        price: 3500,
+        image: "/images/placeholder.png",
+        reviewCount: 425,
+        rating: 4.7
+      },
+      {
+        id: 202,
+        name: "Bolu Mountain Resort",
+        location: "Kartalkaya, Bolu",
+        price: 4200,
+        image: "/images/placeholder.png",
+        reviewCount: 312,
         rating: 4.6
       }
-    ],
-  },{
-    id: '3',
-    slug: 'balayi-otelleri',
-    name: 'Balayı Otelleri',
-    image: '/images/honeymoon-hotels.jpg',
-    description: 'Balayı otelleri',
+    ]
+  },
+  {
+    id: 3,
+    slug: "balayi-otelleri",
+    name_tr: "Balayı Otelleri",
+    name_en: "Honeymoon Hotels",
+    description_tr: "Romantik bir balayı için özel seçilmiş oteller",
+    description_en: "Specially selected hotels for a romantic honeymoon",
+    image: "/images/honeymoon-hotels.jpg",
     hotels: [
       {
-        id: '301',
-        name: 'Balayı Hotel 1',
-        location: 'Balayı',
-        price: 3500,
-        image: '/images/placeholder.png',
-        reviewCount: 524,
-        rating: 4.8
+        id: 301,
+        name: "Adam & Eve Hotel",
+        location: "Belek, Antalya",
+        price: 12500,
+        image: "/images/placeholder.png",
+        reviewCount: 634,
+        rating: 4.9
       },
       {
-        id: '302',
-        name: 'Balayı Hotel 2',
-        location: 'Balayı',
-        price: 4200,
-        image: '/images/placeholder.png',
-        reviewCount: 412,
-        rating: 4.7
+        id: 302,
+        name: "Maxx Royal Kemer",
+        location: "Kemer, Antalya",
+        price: 15800,
+        image: "/images/placeholder.png",
+        reviewCount: 528,
+        rating: 4.8
       }
     ]
   },
   {
-    id: '4',
-    slug: 'muhafazakar-otelleri',
-    name: 'Muhafazakar Otelleri',
-    image: '/images/conservative-hotels.jpg',
-    description: 'Muhafazakar otelleri',
+    id: 4,
+    slug: "muhafazakar-oteller",
+    name_tr: "Muhafazakar Oteller",
+    name_en: "Conservative Hotels",
+    description_tr: "İslami konsepte uygun tatil deneyimi",
+    description_en: "Holiday experience suitable for Islamic concept",
+    image: "/images/conservative-hotels.jpg",
     hotels: [
       {
-        id: '401',
-        name: 'Muhafazakar Hotel 1',
-        location: 'Muhafazakar',
-        price: 3500,
-        image: '/images/placeholder.png',
-        reviewCount: 524,
-        rating: 4.8
-      },
-      {
-        id: '402',
-        name: 'Muhafazakar Hotel 2',
-        location: 'Muhafazakar',
-        price: 4200,
-        image: '/images/placeholder.png',
-        reviewCount: 412,
+        id: 401,
+        name: "Adenya Hotel & Resort",
+        location: "Alanya, Antalya",
+        price: 6500,
+        image: "/images/placeholder.png",
+        reviewCount: 745,
         rating: 4.7
       },
       {
-        id: '402',
-        name: 'Muhafazakar Hotel 3',
-        location: 'Muhafazakar',
-        price: 4200,
-        image: '/images/placeholder.png',
-        reviewCount: 412,
-        rating: 4.7
+        id: 402,
+        name: "Wome Deluxe",
+        location: "Alanya, Antalya",
+        price: 5800,
+        image: "/images/placeholder.png",
+        reviewCount: 632,
+        rating: 4.6
       }
     ]
   },
   {
-    id: '5',
-    slug: 'termal-otelleri',
-    name: 'Termal Otelleri',
-    image: '/images/thermal-hotels.jpg',
-    description: 'Termal otelleri',
+    id: 5,
+    slug: "termal-oteller",
+    name_tr: "Termal Otelleri",
+    name_en: "Thermal Hotels",
+    description_tr: "Şifalı sularla sağlık ve dinlenme",
+    description_en: "Health and relaxation with healing waters",
+    image: "/images/thermal-hotels.jpg",
     hotels: [
       {
-        id: '501',
-        name: 'Termal Hotel 1',
-        location: 'Termal',
-        price: 3500,
-        image: '/images/placeholder.png',
-        reviewCount: 524,
+        id: 501,
+        name: "Richmond Nua Wellness",
+        location: "Sapanca, Sakarya",
+        price: 4500,
+        image: "/images/hotels/richmond-nua.jpg",
+        reviewCount: 523,
         rating: 4.8
       },
       {
-        id: '502',
-        name: 'Termal Hotel 2',
-        location: 'Termal',
-        price: 4200,
-        image: '/images/placeholder.png',
+        id: 502,
+        name: "NG Afyon",
+        location: "Afyon",
+        price: 3800,
+        image: "/images/hotels/ng-afyon.jpg",
         reviewCount: 412,
-        rating: 4.7,
+        rating: 4.6
       }
     ]
   },
   {
-    id: '6',
-    slug: 'butik-oteller',
-    name: 'Butik Oteller',
-    image: '/images/boutique-hotels.jpg',
-    description: 'Butik oteller',
+    id: 6,
+    slug: "butik-oteller",
+    name_tr: "Butik Oteller",
+    name_en: "Boutique Hotels",
+    description_tr: "Özel tasarımlı, samimi atmosfer",
+    description_en: "Specially designed, intimate atmosphere",
+    image: "/images/boutique-hotels.jpg",
     hotels: [
       {
-        id: '601',
-        name: 'Butik Hotel 1',
-        location: 'Butik',
-        price: 3500,
-        image: '/images/placeholder.png',
-        reviewCount: 524,
-        rating: 4.8
+        id: 601,
+        name: "Museum Hotel",
+        location: "Ürgüp, Nevşehir",
+        price: 8500,
+        image: "/images/placeholder.png",
+        reviewCount: 345,
+        rating: 4.9
       },
       {
-        id: '602',
-        name: 'Butik Hotel 2',
-        location: 'Butik',
-        price: 4200,
-        image: '/images/placeholder.png',
-        reviewCount: 412,
-        rating: 4.7
+        id: 602,
+        name: "Argos in Cappadocia",
+        location: "Uçhisar, Nevşehir",
+        price: 7800,
+        image: "/images/placeholder.png",
+        reviewCount: 289,
+        rating: 4.8
       }
     ]
   },
   {
-    id: '7',
-    slug: 'sehir-otelleri',
-    name: 'Şehir Otelleri',
-    image: '/images/city-hotels.jpg',
-    description: 'Şehir otelleri',
+    id: 7,
+    slug: "sehir-otelleri",
+    name_tr: "Şehir Otelleri",
+    name_en: "City Hotels",
+    description_tr: "Şehir merkezinde konforlu konaklama",
+    description_en: "Comfortable accommodation in city center",
+    image: "/images/city-hotels.jpg",
     hotels: [
       {
-        id: '701',
-        name: 'Şehir Hotel 1',
-        location: 'Şehir',
-        price: 3500,
-        image: '/images/placeholder.png',
-        reviewCount: 524,
-        rating: 4.8
+        id: 701,
+        name: "Shangri-La Bosphorus",
+        location: "Beşiktaş, İstanbul",
+        price: 12500,
+        image: "/images/placeholder.png",
+        reviewCount: 634,
+        rating: 4.9
       },
       {
-        id: '702',
-        name: 'Şehir Hotel 2',
-        location: 'Şehir',
-        price: 4200,
-        image: '/images/placeholder.png',
-        reviewCount: 412,
-        rating: 4.7
+        id: 702,
+        name: "Four Seasons Bosphorus",
+        location: "Beşiktaş, İstanbul",
+        price: 15800,
+        image: "/images/placeholder.png",
+        reviewCount: 528,
+        rating: 4.8
       }
     ]
   },
   {
-    id: '8',
-    slug: 'ultra-luks-otelleri',
-    name: 'Ultra Lüks Otelleri',
-    image: '/images/luxury-hotels.jpg',
-    description: 'Ultra Lüks otelleri',
+    id: 8,
+    slug: "ultra-luks-oteller",
+    name_tr: "Ultra Lüks Otelleri",
+    name_en: "Ultra Luxury Hotels",
+    description_tr: "En üst düzey lüks ve konfor",
+    description_en: "Ultimate luxury and comfort",
+    image: "/images/luxury-hotels.jpg",
     hotels: [
       {
-        id: '801',
-        name: 'Ultra Lüks Hotel 1',
-        location: 'Ultra Lüks',
-        price: 3500,
-        image: '/images/placeholder.png',
-        reviewCount: 524,
-        rating: 4.8
+        id: 801,
+        name: "Mandarin Oriental Bodrum",
+        location: "Bodrum, Muğla",
+        price: 25000,
+        image: "/images/placeholder.png",
+        reviewCount: 423,
+        rating: 4.9
       },
       {
-        id: '802',
-        name: 'Ultra Lüks Hotel 2',
-        location: 'Ultra Lüks',
-        price: 4200,
-        image: '/images/placeholder.png',
-        reviewCount: 412,
-        rating: 4.7
+        id: 802,
+        name: "D Maris Bay",
+        location: "Marmaris, Muğla",
+        price: 22000,
+        image: "/images/placeholder.png",
+        reviewCount: 378,
+        rating: 4.8
       }
     ]
   }
 ];
 
-export const getRegionBySlug = (slug: string): IRegion | undefined => {
+export const getRegionBySlug = (slug: string) => {
   return regions.find(region => region.slug === slug);
 };
 
-export const getThemeBySlug = (slug: string): ITheme | undefined => {
+export const getThemeBySlug = (slug: string) => {
   return themes.find(theme => theme.slug === slug);
 }; 

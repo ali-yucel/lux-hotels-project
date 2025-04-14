@@ -8,8 +8,9 @@ export default function LanguageSelector() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleLanguageChange = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale });
+  const handleLanguageChange = async (newLocale: string) => {
+    if (locale === newLocale) return;
+    await router.push(pathname, { locale: newLocale });
   };
 
   return (
